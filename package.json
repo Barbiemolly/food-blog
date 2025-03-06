@@ -1,7 +1,7 @@
 {
   "name": "chef-2.0",
   "version": "1.0.0",
-  "description": "",
+  "description": "Chef 2.0 app",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +17,8 @@
     "express-session": "^1.18.1",
     "multer": "^1.4.5-lts.1",
     "mysql2": "^3.12.0"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
