@@ -1,0 +1,32 @@
+<%- include('head') %>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/Styles/blog.css">
+    <script src="/Javascripts/blog.js" defer></script>
+</head>
+<body>
+    <%- include('navbar') %>
+    <main>
+      <h1>Blog Posts</h1>
+      <div id="blogCardsContainer" class="container">
+        <div class="row">
+          <% blogs.forEach((blog, index) => { %>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="/uploads/<%= blog.image_path %>" class="card-img-top" alt="<%= blog.title %>">
+                <div class="card-body">
+                  <h5 class="card-title"><%= blog.title %></h5>
+                  <p class="card-text"><%= blog.description %></p>
+                  <% if (blog.exclusivity === 'yes') { %>
+                    <span class="badge bg-warning text-dark">★ Exclusive</span>
+                  <% } %>
+                  <button class="btn btn-primary view-details" data-id="<%= blog.id %>">View</button>
+                </div>
+              </div>
+            </div>
+          <% }); %>
+        </div>
+      </div> 
+      <div id="blogDetailsContainer" class="d-none">
+       
+      </div>
+    <%- include('footer') %>

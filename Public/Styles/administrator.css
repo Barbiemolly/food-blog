@@ -1,0 +1,72 @@
+.container, main {
+    max-width: 900px;
+    margin: 5% auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid var(--Gray-light-200);
+    background-color: var(--Gray-light-300);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.active {
+    background-color: var(--Green-light);
+    color: var(--Gray-light-200);
+}
+
+button:hover {
+    background-color: var(--Gray-light-200);
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.postForm {
+    display: none;
+    margin-top: 20px;
+}
+
+.postForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--Gray-light-200);
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--Green-light);
+    color: white;
+    cursor: pointer;
+}
+th{
+    padding-right: 2rem;
+}

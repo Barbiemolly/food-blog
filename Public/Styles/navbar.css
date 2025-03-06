@@ -1,0 +1,102 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--Gray-light-300);
+    padding: 0.25rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2rem; 
+    color: var(--Gray);
+    font-weight: bolder;
+    padding-right: 2rem;
+}
+
+.logo span {
+    color: var(--Yellow);
+    font-size: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar a, .icons a {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    color: var(--Yellow);
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: var(--Gray);
+}
+
+#toggler {
+    display: none;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    color: var(--Gray);
+    padding: 1rem;
+    cursor: pointer;
+    display: none; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .fa-bars {
+        display: block; 
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: var(--Gray-light-300);
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        overflow: hidden;
+        transition: clip-path 0.3s ease-in-out;
+    }
+
+    #toggler:checked ~ .navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navbar a {
+        margin: 1rem 0;
+        padding: 1rem 1.5rem;
+        width: 100%;
+        text-align: center;
+        background: var(--Gray-light-100);
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .fa-bars {
+        font-size: 1.8rem;
+    }
+}

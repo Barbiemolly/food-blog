@@ -1,0 +1,33 @@
+<%- include('head') %>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/Styles/recipes.css">
+    <script src="/Javascripts/recipe.js" defer></script>
+</head>
+<body>
+    <%- include('navbar') %>
+    <main>
+        <h1>All the recipes</h1>
+        <div id="recipeCardsContainer" class="container">
+            <div class="row">
+              <% recipes.forEach((recipe, index) => { %>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="/uploads/<%= recipe.image_path %>" class="card-img-top" alt="<%= recipe.title %>">
+                    <div class="card-body">
+                      <h5 class="card-title"><%= recipe.title %></h5>
+                      <p class="card-text"><%= recipe.description %></p>
+                      <p><strong>Cook Time</strong> <%= recipe.cooktime %> Minutes</p>
+                      <p><strong>Region:</strong> <%= recipe.region %></p>
+                      <% if (recipe.exclusivity === 'yes') { %>
+                        <span class="badge bg-warning text-dark">★ Exclusive</span>
+                      <% } %>
+                      <button class="btn btn-primary view-details" data-id="<%= recipe.id %>">View</button>
+                    </div>
+                  </div>
+                </div>
+              <% }); %>
+            </div>
+          </div>
+          <div id="recipeDetailsContainer" class="container d-none"></div>
+    </main>
+    <%- include('footer') %>

@@ -1,0 +1,76 @@
+<%- include('head') %>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/Styles/login.css">
+    <script src="/Javascripts/login.js" defer></script>
+</head>
+<body>
+    <%- include('navbar') %>
+    <section class="login_signup_section" id="login_signup_section">
+        <div class="containers" id="containers">
+            <div class="form_container sign-up">
+                <form action="/signup" method="POST">
+                    <h1>Create Account</h1>
+                    <input type="text" placeholder="Name" required name="name" id="fullname">
+                    <input type="email" placeholder="Email" required name="email" id="email">
+                    <input type="password" placeholder="Password" required name="password" id="password">
+                    <button id="signup-button">Sign Up</button>
+                </form>
+            </div>
+            <div class="form_container sign-in">
+                <form action="/login" method="POST">
+                    <h1>Sign In</h1>
+                    <input type="email" placeholder="Email" required name="email" id="email">
+                    <input type="password" placeholder="Password" required name="password" id="password">
+                    <a href="#" class="forgot_password">Forgot Password</a>
+                    <button id="login-button">Sign In</button>
+                </form>
+            </div>
+            <div class="toggler_container">
+                <div class="toggle_toggle">
+                    <div class="toggle_panel toggle_left">
+                        <h1>Welcome Back!</h1>
+                        <p>Enter your personal details to use all of the site's features</p>
+                        <button class="hidden" id="login_btn">Sign In</button>
+                    </div>
+                    <div class="toggle_panel toggle_right" >
+                        <h1>Hello, Friend!</h1>
+                        <p>Register with your personal details to use all of the site's features</p>
+                        <button class="hidden" id="register_btn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section class="subcription-option hidden-subscription" id="subcription-option">
+    <div class="container">
+        <h1>Choose Your Subscription Plan</h1>
+        <div class="plans">
+            <div class="plan">
+                <h2>Free Plan</h2>
+                <p>Limited access to content and recipes.</p>
+                <button onclick="selectPlan('Free Plan', 0)" id="free" value="free">Sign Up for Free</button>
+            </div>
+            <div class="plan">
+                <h2>Monthly Plan</h2>
+                <p>Full access to all content and recipes.</p>
+                <p>Price: R14.99 per month</p>
+                <button onclick="selectPlan('Monthly Plan', 14.99)" id="monthly" value="monthly">Subscribe</button>
+            </div>
+            <div class="plan">
+                <h2>Yearly Plan</h2>
+                <p>Save 10%! Full access to all exclusive content and recipes.</p>
+                <p>Price: R161.89 per year</p>
+                <button onclick="selectPlan('Yearly Plan', 161.89)" id="yearly" value="yearly">Subscribe</button>
+            </div>
+        </div>
+        <div id="summary" class="summary">
+            <h2>Subscription Summary</h2>
+            <p id="selectedPlan"></p>
+            <p id="totalCost"></p>
+        </div>
+    </div>
+   </section>
+    <section class="payment">
+
+    </section>
+    <%- include('footer') %>

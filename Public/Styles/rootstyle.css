@@ -1,0 +1,107 @@
+:root {
+    --Yellow: rgb(246, 230, 9);
+    --Yellow-light: rgb(243, 243, 134);
+    --Orange: rgb(248, 140, 7);
+    --Orange-light: rgb(252, 191, 117);
+    --Green: rgb(3, 73, 23);
+    --Green-light: rgb(175, 210, 159);
+    --Gray: rgb(51, 51, 51);
+    --Gray-light-50: rgb(96, 95, 95);
+    --Gray-light-100: rgb(255, 255, 255);
+    --Gray-light-200: rgb(248, 248, 248);
+    --Gray-light-300: rgb(238, 238, 238);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Slabo 27px', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: rgb(251, 251, 237);
+}
+
+.icons a:hover, a:active {
+    color: var(--Orange-light-200);
+}
+
+#toggler {
+    display: none;
+}
+
+svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+}
+
+span, a {
+    font-size: 1rem; 
+}
+a{
+    text-decoration: none;
+}
+h5 {
+    font-weight: bolder;
+}
+
+.btn-primary, .view-details {
+    background-color: var(--Green-light);
+    border-color: var(--Green-light);
+}
+
+.btn-primary:hover, .btn-primary:active,
+.view-details:hover, .view-details:active {
+    background-color: var(--Green);
+    border-color: var(--Green);
+}
+
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 1rem;
+    }
+
+    span, a {
+        font-size: 0.9rem;
+    }
+
+    svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    p {
+        font-size: 0.9rem;
+    }
+
+    span, a {
+        font-size: 0.8rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+    }
+}

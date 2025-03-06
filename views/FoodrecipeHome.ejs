@@ -1,0 +1,227 @@
+<%- include('head') %>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/Styles/foodblog.css">
+    <script src="/Javascripts/foodrecipehome.js" defer></script>
+</head>
+<body>
+    <%- include('navbar') %>
+    <!--The begining of welcome page section-->
+    <!--the end of the header section-->
+    <main>
+        <section class="welcome container" id="home">
+            <div class="box-container section">
+                <div class="welcome-content">
+                    <div class="content">
+                        <div class="recipe section">
+                            <svg  class="recipes-book"  fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                 width="800px" height="800px" viewBox="0 0 380.721 380.721"
+                                xml:space="preserve">
+                                <g>
+                                <g>
+                                <path d="M380.582,86.414l-17.335-5.949l0.139-14.826c0,0-38.213-14.715-86.756-14.715c-40.759,0-75.208,10.457-86.234,14.215
+                                c-11.014-3.759-45.458-14.215-86.222-14.215c-48.543,0-85.043,14.43-85.043,14.43l0.134,16.516L0,86.978l0.093,242.818
+                                l12.949-5.438c0.436-0.186,43.89-18.218,83.992-18.218c34.362,0,74.562,10.12,86.663,13.396l8.081,2.289l7.553-2.416
+                                c10.84-3.3,46.602-13.269,80.25-13.269c39.816,0,87.988,18.171,88.476,18.346l12.665,4.799L380.582,86.414z M181.472,295.8
+                                c-17.236-4.52-50.088-11.932-79.82-11.932c-29.006,0-58.604,7.04-74.778,11.606V83.155c15.708-4.188,42.669-9.957,72.837-9.957
+                                c36.93,0,69.352,8.685,81.761,12.49V295.8z M353.94,295.8c-17.242-4.52-50.088-11.932-79.832-11.932
+                                c-27.792,0-56.002,6.447-72.547,11.002V85.653c12.246-3.782,44.127-12.455,80.656-12.455c29.663,0,56.188,5.722,71.711,9.922
+                                V295.8H353.94z"/>
+                                <path d="M229.702,109.732c0.267-0.046,27.489-5.007,55.025-5.007c27.467,0,52.121,4.938,52.354,4.996l2.139-7.198
+                                c-1.058-0.227-25.922-5.211-54.492-5.211c-28.535,0-55.816,4.985-56.955,5.188L229.702,109.732z"/>
+                                <path d="M337.081,129.996l2.139-7.209c-1.058-0.227-25.922-5.211-54.492-5.211c-28.547,0-55.805,4.984-56.955,5.199l1.93,7.245
+                                c0.267-0.047,27.443-5.02,55.025-5.02C312.17,124.988,336.826,129.938,337.081,129.996z"/>
+                                <path d="M229.702,149.353c0.267-0.058,27.489-5.02,55.025-5.02c27.443,0,52.099,4.95,52.354,4.996l2.139-7.209
+                                c-1.058-0.227-25.922-5.211-54.492-5.211c-28.547,0-55.839,4.973-56.978,5.199L229.702,149.353z"/>
+                                <path d="M284.704,164.607c27.467,0,52.122,4.932,52.366,4.984l2.126-7.198c-1.046-0.227-25.91-5.211-54.492-5.211
+                                c-28.559,0-55.815,4.973-56.954,5.2l1.952,7.232C229.968,169.557,257.122,164.607,284.704,164.607z"/>
+                                <path d="M284.704,184.203c27.467,0,52.122,4.949,52.366,4.996l2.126-7.198c-1.046-0.215-25.91-5.211-54.492-5.211
+                                c-28.523,0-55.815,4.984-56.954,5.199l1.952,7.244C229.968,189.175,257.191,184.203,284.704,184.203z"/>
+                                <path d="M284.704,197.029c-28.535,0-55.793,4.996-56.954,5.206l1.952,7.238c0.255-0.035,27.443-5.008,55.002-5.008
+                                c27.49,0,52.122,4.938,52.366,4.996l2.126-7.204C338.15,202.037,313.297,197.029,284.704,197.029z"/>
+                                <path d="M227.772,221.533l1.93,7.239c0.267-0.035,27.443-5.008,55.025-5.008c27.443,0,52.099,4.926,52.354,5.008l2.139-7.216
+                                c-1.058-0.221-25.922-5.205-54.492-5.205C256.18,216.328,228.911,221.324,227.772,221.533z"/>
+                                <path d="M227.772,240.786l1.93,7.238c0.267-0.047,27.443-5.02,55.025-5.02c27.467,0,52.121,4.949,52.354,4.996l2.139-7.204
+                                c-1.058-0.209-25.922-5.205-54.516-5.205C256.18,235.592,228.911,240.565,227.772,240.786z"/>
+                                <path d="M227.772,261.315l1.93,7.238c0.267-0.058,27.501-5.02,55.025-5.02c27.467,0,52.121,4.95,52.354,4.984l2.139-7.203
+                                c-1.058-0.209-25.922-5.205-54.516-5.205C256.18,256.11,228.911,261.083,227.772,261.315z"/>
+                                <path d="M97.881,135.398c-1.714-0.087-3.416-0.192-5.118-0.262c-6.019-0.261-11.113,4.851-11.764,10.648
+                                c-4.27,1.139-8.272,2.887-11.624,5.699c-3.067,2.579-4.322,6.553-4.032,10.434c-10.009,2.841-16.847,8.412-14.349,18.938h-4.607
+                                l27.153,58.035h67.388l27.135-58.035h-4.281c-0.575-4.531-3.259-8.673-8.4-9.673c0.157-0.354,0.331-0.691,0.477-1.092
+                                c3.567-9.864-3.846-14.872-11.909-17.12c0.319-3.37-0.68-6.937-3.131-9.946c-1.906-2.312-4.816-3.712-8.127-4.583
+                                c-0.627-3.009-2.236-5.699-5.327-7.291c-1.533-0.802-3.084-1.586-4.618-2.371c-0.662-0.343-1.33-0.714-1.987-1.069
+                                c-2.603-10.707-20.048-13.722-22.854-0.761C97.19,130.164,97.26,132.947,97.881,135.398z M78.879,235.337l-17.986-48.828
+                                l4.101-0.046l18.097,48.595L78.879,235.337z M89.946,235.081l-9.242-48.288l3.793-0.104l9.626,48.369h-4.177V235.081z
+                                M149.103,186.474l3.985,0.227l-17.562,48.659l-4.096-0.278L149.103,186.474z M131.756,186.404l3.863,0.285l-10.027,48.613
+                                l-3.689,0.104L131.756,186.404z M114.322,186.689l3.724,0.261l-2.725,48.107h-3.532L114.322,186.689z M101.774,186.404
+                                l3.224,48.537l-3.735,0.232l-3.224-48.543L101.774,186.404z"/>
+                                </g>
+                                </g>  
+                            </svg>
+                            Hot Recipes
+                        </div>
+                        <h1>Delicious Chicken Ramen</h1>
+                        <p>
+                            Chicken Ramen  is a Asain dish, cooked in different ways depending on which Asain <br>
+                            region(country) you are visiting,
+                           
+                        </p>
+                        <div class="time section">
+                            <div class="section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" id="timer"><path d="M236.6 271.6c4.6 5.7 11.5 9.4 19.4 9.4 13.8 0 25-11.2 25-25 0-7.3-3.2-13.8-8.2-18.4-.6-.7-1.3-1.5-2.2-2.2 0 0-117.7-87.5-120.3-85.2-2.6 2.3 85.3 120.2 85.3 120.2.2.4.7.8 1 1.2z"></path>
+                                    <path d="M256.2 48h-.2v112h16V65.3c97.8 8.3 175.3 90.5 175.3 190.5 0 105.5-85.7 191.4-191.2 191.4-105.5 0-191.3-85.8-191.3-191.3 0-52.8 21.5-100.6 56.1-135.2L109 108.9C71.3 146.6 48 198.6 48 256c0 114.9 93.1 208 208 208s208-93.1 208-208S371 48 256.2 48z"></path></svg>
+                                    <p>45 Minutes</p>
+                            </div>
+                            <div class="section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32" id="fork-and-knife"><path fill="#000" fill-rule="evenodd"
+                                     d="M22.1082 3.75232C22.1061 3.63034 22.0485 3.51597 21.9517 3.4417C21.855 3.36744 21.7296 3.3414 21.6112 3.37098C20.6903 3.60121 18.1445 5.23391 18.5977 9.76634C18.8181 11.9706 19.2472 13.4639 19.6279 14.4375C19.8183 14.9243 19.9952 15.2775 20.1244 15.5203C20.1638 15.5945 20.1914 15.6449 20.2147 15.6875C20.2351 15.7247 20.2522 15.7559 20.2711 15.7918L20.2796 15.8081V27.3083C20.2796 28.0714 20.8982 28.6901 21.6614 28.6901C22.4602 28.6901 23.0927 28.0147 23.0402 27.2176L22.3178 16.2338L22.1082 3.75232ZM19.3938 9.68673C19.0612 6.36117 20.4743 4.89162 21.3185 4.37199L21.5181 16.257C21.5182 16.2635 21.5185 16.27 21.5189 16.2765L22.242 27.2701C22.264 27.6057 21.9977 27.8901 21.6614 27.8901C21.3401 27.8901 21.0796 27.6296 21.0796 27.3083L21.0796 15.7377C21.0796 15.6402 21.0452 15.5591 21.0346 15.534L21.0346 15.534L21.0339 15.5323C21.0177 15.4941 20.9975 15.4543 20.979 15.4191C20.9647 15.392 20.9413 15.349 20.9152 15.3011L20.9152 15.3011C20.8873 15.2499 20.8565 15.1932 20.8306 15.1446C20.7119 14.9215 20.5493 14.597 20.3729 14.1461C20.0202 13.2443 19.6073 11.8225 19.3938 9.68673ZM8.40001 4.7C8.40001 4.53431 8.53432 4.4 8.70001 4.4C8.86569 4.4 9.00001 4.53431 9.00001 4.7V8.83077C9.00001 9.82488 9.80589 10.6308 10.8 10.6308H12.2C13.1941 10.6308 14 9.82488 14 8.83077V4.7C14 4.53431 14.1343 4.4 14.3 4.4C14.4657 4.4 14.6 4.53431 14.6 4.7V10.4074C14.6 10.942 14.333 11.4413 13.8884 11.7381L12.8675 12.4196C12.2005 12.8649 11.8 13.6138 11.8 14.4157L11.8 16.75C11.8 16.7583 11.8003 16.7666 11.8008 16.7748L12.4347 26.9627C12.4562 27.3081 12.1819 27.6 11.8358 27.6H11.8C11.4686 27.6 11.2 27.3314 11.2 27V16.75V14.4157C11.2 13.6138 10.7995 12.8649 10.1326 12.4196L9.11164 11.7381C8.66701 11.4413 8.40001 10.942 8.40001 10.4074L8.40001 4.7ZM9.80001 8.83077C9.80001 9.24083 10.0468 9.59325 10.4 9.74756V4C10.4 3.77909 10.5791 3.6 10.8 3.6C11.0209 3.6 11.2 3.77909 11.2 4V9.83077H11.8V4C11.8 3.77909 11.9791 3.6 12.2 3.6C12.4209 3.6 12.6 3.77909 12.6 4V9.74756C12.9532 9.59325 13.2 9.24083 13.2 8.83077V4.7C13.2 4.09249 13.6925 3.6 14.3 3.6C14.9075 3.6 15.4 4.09249 15.4 4.7V10.4074C15.4 11.2093 14.9995 11.9582 14.3326 12.4034L13.3116 13.085C12.867 13.3818 12.6 13.8811 12.6 14.4157V16.7376L13.2331 26.9131C13.2833 27.7189 12.6432 28.4 11.8358 28.4H11.8C11.0268 28.4 10.4 27.7732 10.4 27V16.75V14.4157C10.4 13.8811 10.133 13.3818 9.68837 13.085L8.66746 12.4035C8.00052 11.9582 7.60001 11.2093 7.60001 10.4074V4.7C7.60001 4.09249 8.09249 3.6 8.70001 3.6C9.30752 3.6 9.80001 4.09249 9.80001 4.7V8.83077Z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p>Asian</p>
+                            </div>
+                        </div>
+                        <div class="profile-btn section">
+                            <div class="profile section">
+                                <div class="profile-img section">
+                                    <img src="/Images/chef asn-photoaidcom-cropped.jpg" alt="">
+                                    <div class="colomn">
+                                        <h3>Jie-Tang Zhang</h3>
+                                        <p>20 Febraury 2024</p>
+                                    </div>
+                                </div>
+                                <div class="welcome-btn section" id="recipes" onclick="window.location.href='/recipe';" >
+                                    View Recipes
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" id="play">
+                                        <path fill-rule="evenodd" d="M13 0A13 13 0 0 0 0 13a13 13 0 0 0 13 13 13 13 0 0 0 13-13A13 13 0 0 0 13 0zm-2.518 7a.498.498 0 0 1 .329.107l7 5.5a.5.5 0 0 1 0 .786c-2.333 1.833-4.668 3.665-7 5.498a.5.5 0 0 1-.811-.395V7.5c0-.27.213-.489.482-.5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        <!--the end of the welcome page section-->
+        <!--the beginning of recent blog section-->
+        <section class="recent-blog" id="recent-blog">
+            <div class="container">
+                <div class="row">
+                  <% blogs.forEach((blog) => { %>
+                    <div class="col-md-3 mb-4">
+                      <div class="card">
+                        <img src="/uploads/<%= blog.image_path %>" class="card-img-top" alt="<%= blog.title %>">
+                        <div class="card-body">
+                          <h5 class="card-title"><%= blog.title %></h5>
+                          <p class="card-text"><%= blog.description %></p>
+                          <% if (blog.exclusivity === 'yes') { %>
+                            <span class="badge bg-warning text-dark">★ Exclusive</span>
+                          <% } %>
+                          <button class="btn btn-primary view-details" data-id="<%= blog.id %>">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  <% }); %>
+                </div>
+            </div>
+            <div id="details-container" class="details-container"></div>
+        </section>
+        <!--the end of the recent blog section-->
+        <!--the beginning of the about section-->
+        <section class="about" id="about">
+            <div class="column-about">
+                <div class="recipes-content" >
+                    <div class="recipes about-recipe">
+                        <img src="/Images/jollof rice.jpg" class="about-recipe-img" alt="">
+                        <h3>Mouth watering Jollof Rice with Chicken and Platain</h3>
+                        <div class="time section">
+                            <div class="section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" id="timer"><path d="M236.6 271.6c4.6 5.7 11.5 9.4 19.4 9.4 13.8 0 25-11.2 25-25 0-7.3-3.2-13.8-8.2-18.4-.6-.7-1.3-1.5-2.2-2.2 0 0-117.7-87.5-120.3-85.2-2.6 2.3 85.3 120.2 85.3 120.2.2.4.7.8 1 1.2z"></path>
+                                    <path d="M256.2 48h-.2v112h16V65.3c97.8 8.3 175.3 90.5 175.3 190.5 0 105.5-85.7 191.4-191.2 191.4-105.5 0-191.3-85.8-191.3-191.3 0-52.8 21.5-100.6 56.1-135.2L109 108.9C71.3 146.6 48 198.6 48 256c0 114.9 93.1 208 208 208s208-93.1 208-208S371 48 256.2 48z"></path></svg>
+                                    <p>1 hour</p>
+                            </div>
+                            <div class="section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32" id="fork-and-knife"><path fill="#000" fill-rule="evenodd"
+                                     d="M22.1082 3.75232C22.1061 3.63034 22.0485 3.51597 21.9517 3.4417C21.855 3.36744 21.7296 3.3414 21.6112 3.37098C20.6903 3.60121 18.1445 5.23391 18.5977 9.76634C18.8181 11.9706 19.2472 13.4639 19.6279 14.4375C19.8183 14.9243 19.9952 15.2775 20.1244 15.5203C20.1638 15.5945 20.1914 15.6449 20.2147 15.6875C20.2351 15.7247 20.2522 15.7559 20.2711 15.7918L20.2796 15.8081V27.3083C20.2796 28.0714 20.8982 28.6901 21.6614 28.6901C22.4602 28.6901 23.0927 28.0147 23.0402 27.2176L22.3178 16.2338L22.1082 3.75232ZM19.3938 9.68673C19.0612 6.36117 20.4743 4.89162 21.3185 4.37199L21.5181 16.257C21.5182 16.2635 21.5185 16.27 21.5189 16.2765L22.242 27.2701C22.264 27.6057 21.9977 27.8901 21.6614 27.8901C21.3401 27.8901 21.0796 27.6296 21.0796 27.3083L21.0796 15.7377C21.0796 15.6402 21.0452 15.5591 21.0346 15.534L21.0346 15.534L21.0339 15.5323C21.0177 15.4941 20.9975 15.4543 20.979 15.4191C20.9647 15.392 20.9413 15.349 20.9152 15.3011L20.9152 15.3011C20.8873 15.2499 20.8565 15.1932 20.8306 15.1446C20.7119 14.9215 20.5493 14.597 20.3729 14.1461C20.0202 13.2443 19.6073 11.8225 19.3938 9.68673ZM8.40001 4.7C8.40001 4.53431 8.53432 4.4 8.70001 4.4C8.86569 4.4 9.00001 4.53431 9.00001 4.7V8.83077C9.00001 9.82488 9.80589 10.6308 10.8 10.6308H12.2C13.1941 10.6308 14 9.82488 14 8.83077V4.7C14 4.53431 14.1343 4.4 14.3 4.4C14.4657 4.4 14.6 4.53431 14.6 4.7V10.4074C14.6 10.942 14.333 11.4413 13.8884 11.7381L12.8675 12.4196C12.2005 12.8649 11.8 13.6138 11.8 14.4157L11.8 16.75C11.8 16.7583 11.8003 16.7666 11.8008 16.7748L12.4347 26.9627C12.4562 27.3081 12.1819 27.6 11.8358 27.6H11.8C11.4686 27.6 11.2 27.3314 11.2 27V16.75V14.4157C11.2 13.6138 10.7995 12.8649 10.1326 12.4196L9.11164 11.7381C8.66701 11.4413 8.40001 10.942 8.40001 10.4074L8.40001 4.7ZM9.80001 8.83077C9.80001 9.24083 10.0468 9.59325 10.4 9.74756V4C10.4 3.77909 10.5791 3.6 10.8 3.6C11.0209 3.6 11.2 3.77909 11.2 4V9.83077H11.8V4C11.8 3.77909 11.9791 3.6 12.2 3.6C12.4209 3.6 12.6 3.77909 12.6 4V9.74756C12.9532 9.59325 13.2 9.24083 13.2 8.83077V4.7C13.2 4.09249 13.6925 3.6 14.3 3.6C14.9075 3.6 15.4 4.09249 15.4 4.7V10.4074C15.4 11.2093 14.9995 11.9582 14.3326 12.4034L13.3116 13.085C12.867 13.3818 12.6 13.8811 12.6 14.4157V16.7376L13.2331 26.9131C13.2833 27.7189 12.6432 28.4 11.8358 28.4H11.8C11.0268 28.4 10.4 27.7732 10.4 27V16.75V14.4157C10.4 13.8811 10.133 13.3818 9.68837 13.085L8.66746 12.4035C8.00052 11.9582 7.60001 11.2093 7.60001 10.4074V4.7C7.60001 4.09249 8.09249 3.6 8.70001 3.6C9.30752 3.6 9.80001 4.09249 9.80001 4.7V8.83077Z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p>African</p>
+                            </div>
+                        </div>
+                        <p>Jollof rice is a staple in Nigerian cuisine. It's made from rice, tomatoes, onions, peppers,
+                            and other seasonings—absolutely delicious!</p>
+                        <button class="btn recipe-more" onclick="window.location.href='/recipe';" >Recipe</button>
+                    </div> 
+                </div>
+                <!--the end of recipe div-->
+                <!--the beginning of the about div-->
+                    <div class="about-info">
+                        <img src="/Images/chef asn.jpg" alt="">
+                        <p><span>Hey there! I'm Jie-Tang Zhang.</span> Welcome to the flavorful world of
+                             your travel chef guide! Join me as I embarks on culinary adventures across the globe,
+                              discovering new tastes, traditional recipes, and hidden food gems. From street food stalls to fine dining, 
+                              Sarah brings the authentic flavors of each destination to your kitchen. 
+                            Whether you're a seasoned foodie or a curious beginner, My blog is your passport to global cuisine. Ready to take your taste buds on a journey? Let's cook, travel, and eat together!</p>
+                        <p id="signature">Jie-Tang Zhang. </p>  
+                        <h5>More about me</h5>  
+                        <ul class="social-media-about">
+                            <li>
+                                <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="facebook"><path fill-rule="evenodd" d="M12 5.5H9v-2a1 1 0 0 1 1-1h1V0H9a3 3 0 0 0-3 3v2.5H4V8h2v8h3V8h2l1-2.5z" clip-rule="evenodd"></path></svg></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="instagram"><path d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z"></path><path d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z"></path><circle cx="12.3" cy="3.7" r=".533"></circle></svg></a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/?mx=2"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" fill="none" viewBox="0 0 512 512" id="twitter"><g clip-path="url(#clip0_84_15697)"><rect width="512" height="512" fill="#000" rx="60"></rect><path fill="#fff" d="M355.904 100H408.832L293.2 232.16L429.232 412H322.72L239.296 302.928L143.84 412H90.8805L214.56 270.64L84.0645 100H193.28L268.688 199.696L355.904 100ZM337.328 380.32H366.656L177.344 130.016H145.872L337.328 380.32Z"></path></g><defs><clipPath id="clip0_84_15697"><rect width="512" height="512" fill="#fff"></rect></clipPath></defs></svg></a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+        <!--the end of the about section-->
+        <!--the beginning of Recent recipe section-->
+        <section class="recent-recipe" id="recent-recipe">
+            <div class="container">
+                <div class="row">
+                  <% recipes.forEach((recipe) => { %>
+                    <div class="col-md-3 mb-4">
+                      <div class="card">
+                        <img src="/uploads/<%= recipe.image_path %>" class="card-img-top" alt="<%= recipe.title %>">
+                        <div class="card-body">
+                          <h5 class="card-title"><%= recipe.title %></h5>
+                          <p class="card-text"><%= recipe.description %></p>
+                          <p><strong>Cook Time</strong> <%= recipe.cooktime %> Minutes</p>
+                          <p><strong>Region:</strong> <%= recipe.region %></p>
+                          <% if (recipe.exclusivity === 'yes') { %>
+                            <span class="badge bg-warning text-dark">★ Exclusive</span>
+                          <% } %>
+                          <button class="btn btn-primary view-details" data-id="<%= recipe.id %>">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  <% }); %>
+                </div>
+            </div>
+            <div id="detail-container" class="detail-container"></div>
+        </section>
+        <!--the end of recent recipe section-->
+        <!--the beginning of the subcription section-->
+        <section class="subscribe" id="subscribe">
+            <h2>Get all of my best recipes sent to you for <span>Free!</span></h2>
+            <div class="subscribe-content">
+                <div class="subscribe-info">  
+                <img src="/Images/Colorful Modern Cookbook Book Cover.jpg" alt="">
+                <p>Get all the recipes of all the food of the world.
+                    Taste the world with me</p>
+                </div>
+                <div class="subscribe-form">
+                    <form class="subscription">
+                        <input type="email" name="email" id="email" placeholder="Your Email">
+                        <button class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+    
+            </div>
+        </section>
+        <!--the end of the subcription section-->
+    </main>
+        <!--the beginning of a footer-->
+        <%- include('footer') %>
