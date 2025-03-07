@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+require('dotenv').config();
 const mysql = require('mysql2');
 const bcrypt = require('bcryptjs');
 const session = require('express-session');
@@ -21,18 +22,22 @@ app.use(express.urlencoded({ extended: true }));
 
 
 //connecting to mysql database
-const db = mysql.createConnection({
-  host: '127.0.0.1', 
-  user: 'root',   
-  password: '1965Ndumi75Mkhuseli99Celine11Molemo',      
-  database: 'smiling_food', 
+const db = mysql.createPool({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0
 });
-db.connect((err) => {
+db.getConnection((err, connection) => {
   if (err) {
-    console.error('Error connecting to MySQL:', err);
-    return;
+      console.error('Error connecting to MySQL:', err);
+      return;
   }
   console.log('Connected to MySQL database');
+  connection.release();
 });
 
 //set the express-session
